@@ -1,0 +1,610 @@
+2020.03.25 at 15:33:24.158 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2020.03.25 at 15:33:24.864 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 15:33:24.884 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 0(Integer)
+2020.03.25 at 15:33:24.902 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 15:33:24.904 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, 入住管理, #, 0, 0
+2020.03.25 at 15:33:24.906 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, 订单管理, #, 0, 0
+2020.03.25 at 15:33:24.907 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, 会员管理, #, 0, 0
+2020.03.25 at 15:33:24.908 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, 客房管理, #, 0, 0
+2020.03.25 at 15:33:24.909 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 5, 系统用户管理, #, 0, 0
+2020.03.25 at 15:33:24.910 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 6, 数据分析, #, 0, 0
+2020.03.25 at 15:33:24.911 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 6
+2020.03.25 at 15:33:24.917 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 15:33:24.918 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 1(Integer)
+2020.03.25 at 15:33:24.920 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 15:33:24.920 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 11, 入住信息管理, model/toShowInRoomInfo, 1, 0
+2020.03.25 at 15:33:24.921 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 12, 入住信息添加, model/toSaveInRoomInfo, 1, 0
+2020.03.25 at 15:33:24.922 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 13, 消费记录, model/toShowRoomSale, 1, 0
+2020.03.25 at 15:33:24.923 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 15:33:24.925 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 15:33:24.926 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 2(Integer)
+2020.03.25 at 15:33:24.928 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 15:33:24.928 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 21, 订单查询, model/toShowOrders, 2, 0
+2020.03.25 at 15:33:24.929 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 15:33:24.930 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 15:33:24.931 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 3(Integer)
+2020.03.25 at 15:33:24.932 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 15:33:24.933 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 31, 会员信息管理, model/toShowVip, 3, 0
+2020.03.25 at 15:33:24.934 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 32, 添加会员, model/toSaveVip, 3, 0
+2020.03.25 at 15:33:24.935 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2020.03.25 at 15:33:24.936 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 15:33:24.936 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 4(Integer)
+2020.03.25 at 15:33:24.938 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 15:33:24.939 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 41, 客房信息管理, model/toShowRooms, 4, 0
+2020.03.25 at 15:33:24.940 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 42, 房型信息管理, model/toShowRoomType, 4, 0
+2020.03.25 at 15:33:24.941 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2020.03.25 at 15:33:24.942 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 15:33:24.943 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 5(Integer)
+2020.03.25 at 15:33:24.944 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 15:33:24.945 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 51, 角色信息管理, model/toShowRole, 5, 0
+2020.03.25 at 15:33:24.945 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 52, 用户信息管理, model/toShowUser, 5, 0
+2020.03.25 at 15:33:24.947 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 53, 添加用户, model/toSaveUser, 5, 0
+2020.03.25 at 15:33:24.948 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 15:33:24.948 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 15:33:24.949 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 6(Integer)
+2020.03.25 at 15:33:24.951 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 15:33:24.951 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 61, 数据分析, model/toShowdbi, 6, 0
+2020.03.25 at 15:33:24.952 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 15:33:24.954 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：1
+2020.03.25 at 15:33:24.955 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：入住管理
+2020.03.25 at 15:33:24.956 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=11, authorityName='入住信息管理', authorityUrl='model/toShowInRoomInfo', parent=1, flag='0'}
+2020.03.25 at 15:33:24.956 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=12, authorityName='入住信息添加', authorityUrl='model/toSaveInRoomInfo', parent=1, flag='0'}
+2020.03.25 at 15:33:24.956 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=13, authorityName='消费记录', authorityUrl='model/toShowRoomSale', parent=1, flag='0'}
+2020.03.25 at 15:33:24.956 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 15:33:24.957 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：2
+2020.03.25 at 15:33:24.957 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：订单管理
+2020.03.25 at 15:33:24.958 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=21, authorityName='订单查询', authorityUrl='model/toShowOrders', parent=2, flag='0'}
+2020.03.25 at 15:33:24.958 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 15:33:24.958 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：3
+2020.03.25 at 15:33:24.958 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：会员管理
+2020.03.25 at 15:33:24.959 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=31, authorityName='会员信息管理', authorityUrl='model/toShowVip', parent=3, flag='0'}
+2020.03.25 at 15:33:24.959 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=32, authorityName='添加会员', authorityUrl='model/toSaveVip', parent=3, flag='0'}
+2020.03.25 at 15:33:24.959 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 15:33:24.959 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：4
+2020.03.25 at 15:33:24.960 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：客房管理
+2020.03.25 at 15:33:24.960 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=41, authorityName='客房信息管理', authorityUrl='model/toShowRooms', parent=4, flag='0'}
+2020.03.25 at 15:33:24.960 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=42, authorityName='房型信息管理', authorityUrl='model/toShowRoomType', parent=4, flag='0'}
+2020.03.25 at 15:33:24.960 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 15:33:24.961 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：5
+2020.03.25 at 15:33:24.961 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：系统用户管理
+2020.03.25 at 15:33:24.961 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=51, authorityName='角色信息管理', authorityUrl='model/toShowRole', parent=5, flag='0'}
+2020.03.25 at 15:33:24.961 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=52, authorityName='用户信息管理', authorityUrl='model/toShowUser', parent=5, flag='0'}
+2020.03.25 at 15:33:24.961 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=53, authorityName='添加用户', authorityUrl='model/toSaveUser', parent=5, flag='0'}
+2020.03.25 at 15:33:24.962 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 15:33:24.962 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：6
+2020.03.25 at 15:33:24.962 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：数据分析
+2020.03.25 at 15:33:24.962 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=61, authorityName='数据分析', authorityUrl='model/toShowdbi', parent=6, flag='0'}
+2020.03.25 at 15:33:24.962 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 15:33:25.101 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2020.03.25 at 15:33:25.354 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE status = '1' 
+2020.03.25 at 15:33:25.355 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 
+2020.03.25 at 15:33:25.358 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2020.03.25 at 15:33:25.359 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 15
+2020.03.25 at 15:33:25.359 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 15:33:25.361 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status from in_room_info WHERE status = '1' order by id desc limit ?,? 
+2020.03.25 at 15:33:25.362 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 0(Integer), 3(Integer)
+2020.03.25 at 15:33:25.364 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status
+2020.03.25 at 15:33:25.369 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 47, qqqq, 1, 0, 420101015909090811, 13212324532, 1111.00, 2020-03-18 13:00:49.0, 4, 1, 0
+2020.03.25 at 15:33:25.423 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 46, qqq, 1, 0, 420101015909090811, 13412321231, 1111.00, 2020-03-18 12:25:05.0, 16, 1, 0
+2020.03.25 at 15:33:25.424 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 45, 小小, 0, 0, 421123198912120010, 13212321887, 1111.00, 2020-03-16 19:11:50.0, 12, 1, 0
+2020.03.25 at 15:33:25.425 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 15:33:25.426 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 46 test01 - --------------------------------------
+2020.03.25 at 15:33:25.426 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 47 test01 - 共有15条数据
+2020.03.25 at 15:33:25.427 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - qqqq,13212324532
+2020.03.25 at 15:33:25.427 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 15:33:25.428 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 15:33:25.428 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 4(Integer)
+2020.03.25 at 15:33:25.430 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 15:33:25.430 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg, 8204, 1, 2, 1
+2020.03.25 at 15:33:25.433 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 15:33:25.434 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=4, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg', roomNum='8204', roomStatus='1', roomTypeId=2, flag=1}
+2020.03.25 at 15:33:25.439 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 15:33:25.439 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@669513d8
+2020.03.25 at 15:33:25.439 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - qqq,13412321231
+2020.03.25 at 15:33:25.439 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 15:33:25.440 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 15:33:25.440 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 16(Integer)
+2020.03.25 at 15:33:25.441 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 15:33:25.442 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 16, http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg, 8304, 1, 3, 1
+2020.03.25 at 15:33:25.442 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 15:33:25.443 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=16, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg', roomNum='8304', roomStatus='1', roomTypeId=3, flag=1}
+2020.03.25 at 15:33:25.446 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 15:33:25.446 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@54361a9
+2020.03.25 at 15:33:25.446 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - 小小,13212321887
+2020.03.25 at 15:33:25.446 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 15:33:25.446 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 15:33:25.447 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 12(Integer)
+2020.03.25 at 15:33:25.448 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 15:33:25.449 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 12, http://q7dn1b5wf.bkt.clouddn.com/fm5.jpg, 8212, 1, 3, 1
+2020.03.25 at 15:33:25.449 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 15:33:25.450 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=12, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm5.jpg', roomNum='8212', roomStatus='1', roomTypeId=3, flag=1}
+2020.03.25 at 15:33:25.452 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 15:33:25.452 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@18e7143f
+2020.03.25 at 16:07:40.358 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2020.03.25 at 16:07:41.092 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:07:41.120 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 0(Integer)
+2020.03.25 at 16:07:41.141 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:07:41.142 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, 入住管理, #, 0, 0
+2020.03.25 at 16:07:41.149 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, 订单管理, #, 0, 0
+2020.03.25 at 16:07:41.151 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, 会员管理, #, 0, 0
+2020.03.25 at 16:07:41.152 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, 客房管理, #, 0, 0
+2020.03.25 at 16:07:41.154 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 5, 系统用户管理, #, 0, 0
+2020.03.25 at 16:07:41.155 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 6, 数据分析, #, 0, 0
+2020.03.25 at 16:07:41.158 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 6
+2020.03.25 at 16:07:41.167 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:07:41.168 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 1(Integer)
+2020.03.25 at 16:07:41.169 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:07:41.169 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 11, 入住信息管理, model/toShowInRoomInfo, 1, 0
+2020.03.25 at 16:07:41.169 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 12, 入住信息添加, model/toSaveInRoomInfo, 1, 0
+2020.03.25 at 16:07:41.170 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 13, 消费记录, model/toShowRoomSale, 1, 0
+2020.03.25 at 16:07:41.171 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 16:07:41.172 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:07:41.172 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 2(Integer)
+2020.03.25 at 16:07:41.174 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:07:41.174 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 21, 订单查询, model/toShowOrders, 2, 0
+2020.03.25 at 16:07:41.175 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:07:41.175 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:07:41.176 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 3(Integer)
+2020.03.25 at 16:07:41.178 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:07:41.180 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 31, 会员信息管理, model/toShowVip, 3, 0
+2020.03.25 at 16:07:41.182 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 32, 添加会员, model/toSaveVip, 3, 0
+2020.03.25 at 16:07:41.183 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2020.03.25 at 16:07:41.184 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:07:41.185 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 4(Integer)
+2020.03.25 at 16:07:41.187 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:07:41.188 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 41, 客房信息管理, model/toShowRooms, 4, 0
+2020.03.25 at 16:07:41.189 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 42, 房型信息管理, model/toShowRoomType, 4, 0
+2020.03.25 at 16:07:41.190 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2020.03.25 at 16:07:41.191 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:07:41.191 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 5(Integer)
+2020.03.25 at 16:07:41.194 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:07:41.195 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 51, 角色信息管理, model/toShowRole, 5, 0
+2020.03.25 at 16:07:41.196 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 52, 用户信息管理, model/toShowUser, 5, 0
+2020.03.25 at 16:07:41.198 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 53, 添加用户, model/toSaveUser, 5, 0
+2020.03.25 at 16:07:41.199 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 16:07:41.200 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:07:41.201 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 6(Integer)
+2020.03.25 at 16:07:41.202 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:07:41.203 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 61, 数据分析, model/toShowdbi, 6, 0
+2020.03.25 at 16:07:41.204 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:07:41.207 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：1
+2020.03.25 at 16:07:41.208 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：入住管理
+2020.03.25 at 16:07:41.210 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=11, authorityName='入住信息管理', authorityUrl='model/toShowInRoomInfo', parent=1, flag='0'}
+2020.03.25 at 16:07:41.211 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=12, authorityName='入住信息添加', authorityUrl='model/toSaveInRoomInfo', parent=1, flag='0'}
+2020.03.25 at 16:07:41.212 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=13, authorityName='消费记录', authorityUrl='model/toShowRoomSale', parent=1, flag='0'}
+2020.03.25 at 16:07:41.212 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:07:41.212 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：2
+2020.03.25 at 16:07:41.212 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：订单管理
+2020.03.25 at 16:07:41.212 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=21, authorityName='订单查询', authorityUrl='model/toShowOrders', parent=2, flag='0'}
+2020.03.25 at 16:07:41.213 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:07:41.213 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：3
+2020.03.25 at 16:07:41.213 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：会员管理
+2020.03.25 at 16:07:41.213 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=31, authorityName='会员信息管理', authorityUrl='model/toShowVip', parent=3, flag='0'}
+2020.03.25 at 16:07:41.213 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=32, authorityName='添加会员', authorityUrl='model/toSaveVip', parent=3, flag='0'}
+2020.03.25 at 16:07:41.214 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:07:41.215 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：4
+2020.03.25 at 16:07:41.215 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：客房管理
+2020.03.25 at 16:07:41.215 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=41, authorityName='客房信息管理', authorityUrl='model/toShowRooms', parent=4, flag='0'}
+2020.03.25 at 16:07:41.216 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=42, authorityName='房型信息管理', authorityUrl='model/toShowRoomType', parent=4, flag='0'}
+2020.03.25 at 16:07:41.216 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:07:41.216 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：5
+2020.03.25 at 16:07:41.216 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：系统用户管理
+2020.03.25 at 16:07:41.216 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=51, authorityName='角色信息管理', authorityUrl='model/toShowRole', parent=5, flag='0'}
+2020.03.25 at 16:07:41.217 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=52, authorityName='用户信息管理', authorityUrl='model/toShowUser', parent=5, flag='0'}
+2020.03.25 at 16:07:41.217 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=53, authorityName='添加用户', authorityUrl='model/toSaveUser', parent=5, flag='0'}
+2020.03.25 at 16:07:41.217 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:07:41.217 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：6
+2020.03.25 at 16:07:41.217 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：数据分析
+2020.03.25 at 16:07:41.218 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=61, authorityName='数据分析', authorityUrl='model/toShowdbi', parent=6, flag='0'}
+2020.03.25 at 16:07:41.218 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:07:41.373 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2020.03.25 at 16:07:41.660 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE status = '1' 
+2020.03.25 at 16:07:41.664 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 
+2020.03.25 at 16:07:41.667 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2020.03.25 at 16:07:41.668 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 16
+2020.03.25 at 16:07:41.669 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:07:41.673 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status from in_room_info WHERE status = '1' order by id desc limit ?,? 
+2020.03.25 at 16:07:41.675 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 0(Integer), 3(Integer)
+2020.03.25 at 16:07:41.681 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status
+2020.03.25 at 16:07:41.687 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 48, 小白, 1, 1, 420101015909090812, 13212324531, 200.00, 2020-03-26 16:06:02.0, 19, 1, 0
+2020.03.25 at 16:07:41.750 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 47, qqqq, 1, 0, 420101015909090811, 13212324532, 1111.00, 2020-03-18 13:00:49.0, 4, 1, 0
+2020.03.25 at 16:07:41.751 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 46, qqq, 1, 0, 420101015909090811, 13412321231, 1111.00, 2020-03-18 12:25:05.0, 16, 1, 0
+2020.03.25 at 16:07:41.752 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 16:07:41.753 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 46 test01 - --------------------------------------
+2020.03.25 at 16:07:41.753 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 47 test01 - 共有16条数据
+2020.03.25 at 16:07:41.753 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - 小白,13212324531
+2020.03.25 at 16:07:41.754 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 16:07:41.754 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 16:07:41.755 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 19(Integer)
+2020.03.25 at 16:07:41.756 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 16:07:41.756 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 19, http://q7dn1b5wf.bkt.clouddn.com/fm5.jpg, 8307, 1, 6, 1
+2020.03.25 at 16:07:41.759 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:07:41.760 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=19, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm5.jpg', roomNum='8307', roomStatus='1', roomTypeId=6, flag=1}
+2020.03.25 at 16:07:41.766 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 16:07:41.767 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@669513d8
+2020.03.25 at 16:07:41.767 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - qqqq,13212324532
+2020.03.25 at 16:07:41.767 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 16:07:41.768 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 16:07:41.768 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 4(Integer)
+2020.03.25 at 16:07:41.769 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 16:07:41.770 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg, 8204, 1, 2, 1
+2020.03.25 at 16:07:41.770 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:07:41.771 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=4, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg', roomNum='8204', roomStatus='1', roomTypeId=2, flag=1}
+2020.03.25 at 16:07:41.775 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 16:07:41.775 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@54361a9
+2020.03.25 at 16:07:41.775 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - qqq,13412321231
+2020.03.25 at 16:07:41.776 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 16:07:41.776 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 16:07:41.777 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 16(Integer)
+2020.03.25 at 16:07:41.780 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 16:07:41.781 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 16, http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg, 8304, 1, 3, 1
+2020.03.25 at 16:07:41.782 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:07:41.783 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=16, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg', roomNum='8304', roomStatus='1', roomTypeId=3, flag=1}
+2020.03.25 at 16:07:41.787 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 16:07:41.787 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@18e7143f
+2020.03.25 at 16:20:13.711 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2020.03.25 at 16:20:14.297 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:20:14.312 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 0(Integer)
+2020.03.25 at 16:20:14.323 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:20:14.323 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, 入住管理, #, 0, 0
+2020.03.25 at 16:20:14.325 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, 订单管理, #, 0, 0
+2020.03.25 at 16:20:14.325 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, 会员管理, #, 0, 0
+2020.03.25 at 16:20:14.326 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, 客房管理, #, 0, 0
+2020.03.25 at 16:20:14.326 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 5, 系统用户管理, #, 0, 0
+2020.03.25 at 16:20:14.327 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 6, 数据分析, #, 0, 0
+2020.03.25 at 16:20:14.327 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 6
+2020.03.25 at 16:20:14.331 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:20:14.332 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 1(Integer)
+2020.03.25 at 16:20:14.334 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:20:14.335 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 11, 入住信息管理, model/toShowInRoomInfo, 1, 0
+2020.03.25 at 16:20:14.335 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 12, 入住信息添加, model/toSaveInRoomInfo, 1, 0
+2020.03.25 at 16:20:14.336 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 13, 消费记录, model/toShowRoomSale, 1, 0
+2020.03.25 at 16:20:14.337 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 16:20:14.337 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:20:14.338 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 2(Integer)
+2020.03.25 at 16:20:14.339 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:20:14.339 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 21, 订单查询, model/toShowOrders, 2, 0
+2020.03.25 at 16:20:14.340 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:20:14.340 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:20:14.341 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 3(Integer)
+2020.03.25 at 16:20:14.342 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:20:14.343 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 31, 会员信息管理, model/toShowVip, 3, 0
+2020.03.25 at 16:20:14.343 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 32, 添加会员, model/toSaveVip, 3, 0
+2020.03.25 at 16:20:14.344 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2020.03.25 at 16:20:14.344 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:20:14.345 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 4(Integer)
+2020.03.25 at 16:20:14.346 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:20:14.346 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 41, 客房信息管理, model/toShowRooms, 4, 0
+2020.03.25 at 16:20:14.347 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 42, 房型信息管理, model/toShowRoomType, 4, 0
+2020.03.25 at 16:20:14.348 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2020.03.25 at 16:20:14.348 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:20:14.348 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 5(Integer)
+2020.03.25 at 16:20:14.349 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:20:14.350 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 51, 角色信息管理, model/toShowRole, 5, 0
+2020.03.25 at 16:20:14.350 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 52, 用户信息管理, model/toShowUser, 5, 0
+2020.03.25 at 16:20:14.351 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 53, 添加用户, model/toSaveUser, 5, 0
+2020.03.25 at 16:20:14.352 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 16:20:14.352 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:20:14.353 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 6(Integer)
+2020.03.25 at 16:20:14.354 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:20:14.354 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 61, 数据分析, model/toShowdbi, 6, 0
+2020.03.25 at 16:20:14.355 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:20:14.357 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：1
+2020.03.25 at 16:20:14.357 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：入住管理
+2020.03.25 at 16:20:14.358 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=11, authorityName='入住信息管理', authorityUrl='model/toShowInRoomInfo', parent=1, flag='0'}
+2020.03.25 at 16:20:14.358 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=12, authorityName='入住信息添加', authorityUrl='model/toSaveInRoomInfo', parent=1, flag='0'}
+2020.03.25 at 16:20:14.358 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=13, authorityName='消费记录', authorityUrl='model/toShowRoomSale', parent=1, flag='0'}
+2020.03.25 at 16:20:14.359 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:20:14.359 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：2
+2020.03.25 at 16:20:14.359 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：订单管理
+2020.03.25 at 16:20:14.359 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=21, authorityName='订单查询', authorityUrl='model/toShowOrders', parent=2, flag='0'}
+2020.03.25 at 16:20:14.359 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:20:14.359 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：3
+2020.03.25 at 16:20:14.359 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：会员管理
+2020.03.25 at 16:20:14.361 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=31, authorityName='会员信息管理', authorityUrl='model/toShowVip', parent=3, flag='0'}
+2020.03.25 at 16:20:14.361 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=32, authorityName='添加会员', authorityUrl='model/toSaveVip', parent=3, flag='0'}
+2020.03.25 at 16:20:14.361 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:20:14.361 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：4
+2020.03.25 at 16:20:14.361 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：客房管理
+2020.03.25 at 16:20:14.361 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=41, authorityName='客房信息管理', authorityUrl='model/toShowRooms', parent=4, flag='0'}
+2020.03.25 at 16:20:14.361 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=42, authorityName='房型信息管理', authorityUrl='model/toShowRoomType', parent=4, flag='0'}
+2020.03.25 at 16:20:14.361 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:20:14.361 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：5
+2020.03.25 at 16:20:14.361 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：系统用户管理
+2020.03.25 at 16:20:14.361 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=51, authorityName='角色信息管理', authorityUrl='model/toShowRole', parent=5, flag='0'}
+2020.03.25 at 16:20:14.362 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=52, authorityName='用户信息管理', authorityUrl='model/toShowUser', parent=5, flag='0'}
+2020.03.25 at 16:20:14.362 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=53, authorityName='添加用户', authorityUrl='model/toSaveUser', parent=5, flag='0'}
+2020.03.25 at 16:20:14.362 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:20:14.362 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：6
+2020.03.25 at 16:20:14.363 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：数据分析
+2020.03.25 at 16:20:14.363 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=61, authorityName='数据分析', authorityUrl='model/toShowdbi', parent=6, flag='0'}
+2020.03.25 at 16:20:14.363 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:20:14.499 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2020.03.25 at 16:20:14.685 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE status = '1' 
+2020.03.25 at 16:20:14.686 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 
+2020.03.25 at 16:20:14.687 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2020.03.25 at 16:20:14.687 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 16
+2020.03.25 at 16:20:14.687 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:20:14.689 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status from in_room_info WHERE status = '1' order by id desc limit ?,? 
+2020.03.25 at 16:20:14.690 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 0(Integer), 3(Integer)
+2020.03.25 at 16:20:14.691 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status
+2020.03.25 at 16:20:14.695 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 48, 小白, 1, 1, 420101015909090812, 13212324531, 200.00, 2020-03-26 16:06:02.0, 19, 1, 0
+2020.03.25 at 16:20:14.750 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 47, qqqq, 1, 0, 420101015909090811, 13212324532, 1111.00, 2020-03-18 13:00:49.0, 4, 1, 0
+2020.03.25 at 16:20:14.751 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 46, qqq, 1, 0, 420101015909090811, 13412321231, 1111.00, 2020-03-18 12:25:05.0, 16, 1, 0
+2020.03.25 at 16:20:14.752 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 16:20:14.753 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 46 test01 - --------------------------------------
+2020.03.25 at 16:20:14.753 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 47 test01 - 共有16条数据
+2020.03.25 at 16:20:14.753 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - 小白,13212324531
+2020.03.25 at 16:20:14.753 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 16:20:14.754 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 16:20:14.755 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 19(Integer)
+2020.03.25 at 16:20:14.757 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 16:20:14.757 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 19, http://q7dn1b5wf.bkt.clouddn.com/fm5.jpg, 8307, 1, 6, 1
+2020.03.25 at 16:20:14.762 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:20:14.762 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=19, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm5.jpg', roomNum='8307', roomStatus='1', roomTypeId=6, flag=1}
+2020.03.25 at 16:20:14.768 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 16:20:14.768 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@669513d8
+2020.03.25 at 16:20:14.768 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - qqqq,13212324532
+2020.03.25 at 16:20:14.768 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 16:20:14.768 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 16:20:14.769 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 4(Integer)
+2020.03.25 at 16:20:14.770 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 16:20:14.771 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg, 8204, 1, 2, 1
+2020.03.25 at 16:20:14.772 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:20:14.772 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=4, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg', roomNum='8204', roomStatus='1', roomTypeId=2, flag=1}
+2020.03.25 at 16:20:14.776 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 16:20:14.776 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@54361a9
+2020.03.25 at 16:20:14.776 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - qqq,13412321231
+2020.03.25 at 16:20:14.776 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 16:20:14.777 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 16:20:14.777 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 16(Integer)
+2020.03.25 at 16:20:14.779 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 16:20:14.780 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 16, http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg, 8304, 1, 3, 1
+2020.03.25 at 16:20:14.781 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:20:14.781 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=16, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg', roomNum='8304', roomStatus='1', roomTypeId=3, flag=1}
+2020.03.25 at 16:20:14.785 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 16:20:14.785 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@18e7143f
+2020.03.25 at 16:31:51.740 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2020.03.25 at 16:31:52.348 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:31:52.365 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 0(Integer)
+2020.03.25 at 16:31:52.380 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:31:52.380 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, 入住管理, #, 0, 0
+2020.03.25 at 16:31:52.382 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, 订单管理, #, 0, 0
+2020.03.25 at 16:31:52.383 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, 会员管理, #, 0, 0
+2020.03.25 at 16:31:52.383 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, 客房管理, #, 0, 0
+2020.03.25 at 16:31:52.384 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 5, 系统用户管理, #, 0, 0
+2020.03.25 at 16:31:52.385 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 6, 数据分析, #, 0, 0
+2020.03.25 at 16:31:52.386 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 6
+2020.03.25 at 16:31:52.390 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:31:52.392 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 1(Integer)
+2020.03.25 at 16:31:52.393 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:31:52.394 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 11, 入住信息管理, model/toShowInRoomInfo, 1, 0
+2020.03.25 at 16:31:52.395 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 12, 入住信息添加, model/toSaveInRoomInfo, 1, 0
+2020.03.25 at 16:31:52.396 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 13, 消费记录, model/toShowRoomSale, 1, 0
+2020.03.25 at 16:31:52.396 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 16:31:52.397 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:31:52.397 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 2(Integer)
+2020.03.25 at 16:31:52.399 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:31:52.399 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 21, 订单查询, model/toShowOrders, 2, 0
+2020.03.25 at 16:31:52.400 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:31:52.401 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:31:52.401 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 3(Integer)
+2020.03.25 at 16:31:52.403 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:31:52.403 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 31, 会员信息管理, model/toShowVip, 3, 0
+2020.03.25 at 16:31:52.404 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 32, 添加会员, model/toSaveVip, 3, 0
+2020.03.25 at 16:31:52.405 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2020.03.25 at 16:31:52.406 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:31:52.406 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 4(Integer)
+2020.03.25 at 16:31:52.408 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:31:52.408 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 41, 客房信息管理, model/toShowRooms, 4, 0
+2020.03.25 at 16:31:52.409 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 42, 房型信息管理, model/toShowRoomType, 4, 0
+2020.03.25 at 16:31:52.410 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2020.03.25 at 16:31:52.410 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:31:52.411 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 5(Integer)
+2020.03.25 at 16:31:52.412 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:31:52.413 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 51, 角色信息管理, model/toShowRole, 5, 0
+2020.03.25 at 16:31:52.413 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 52, 用户信息管理, model/toShowUser, 5, 0
+2020.03.25 at 16:31:52.415 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 53, 添加用户, model/toSaveUser, 5, 0
+2020.03.25 at 16:31:52.415 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 16:31:52.416 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:31:52.416 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 6(Integer)
+2020.03.25 at 16:31:52.417 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:31:52.418 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 61, 数据分析, model/toShowdbi, 6, 0
+2020.03.25 at 16:31:52.419 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:31:52.421 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：1
+2020.03.25 at 16:31:52.421 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：入住管理
+2020.03.25 at 16:31:52.422 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=11, authorityName='入住信息管理', authorityUrl='model/toShowInRoomInfo', parent=1, flag='0'}
+2020.03.25 at 16:31:52.422 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=12, authorityName='入住信息添加', authorityUrl='model/toSaveInRoomInfo', parent=1, flag='0'}
+2020.03.25 at 16:31:52.422 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=13, authorityName='消费记录', authorityUrl='model/toShowRoomSale', parent=1, flag='0'}
+2020.03.25 at 16:31:52.423 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:31:52.423 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：2
+2020.03.25 at 16:31:52.423 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：订单管理
+2020.03.25 at 16:31:52.423 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=21, authorityName='订单查询', authorityUrl='model/toShowOrders', parent=2, flag='0'}
+2020.03.25 at 16:31:52.423 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:31:52.424 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：3
+2020.03.25 at 16:31:52.424 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：会员管理
+2020.03.25 at 16:31:52.424 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=31, authorityName='会员信息管理', authorityUrl='model/toShowVip', parent=3, flag='0'}
+2020.03.25 at 16:31:52.424 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=32, authorityName='添加会员', authorityUrl='model/toSaveVip', parent=3, flag='0'}
+2020.03.25 at 16:31:52.425 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:31:52.426 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：4
+2020.03.25 at 16:31:52.426 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：客房管理
+2020.03.25 at 16:31:52.427 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=41, authorityName='客房信息管理', authorityUrl='model/toShowRooms', parent=4, flag='0'}
+2020.03.25 at 16:31:52.427 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=42, authorityName='房型信息管理', authorityUrl='model/toShowRoomType', parent=4, flag='0'}
+2020.03.25 at 16:31:52.427 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:31:52.427 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：5
+2020.03.25 at 16:31:52.427 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：系统用户管理
+2020.03.25 at 16:31:52.428 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=51, authorityName='角色信息管理', authorityUrl='model/toShowRole', parent=5, flag='0'}
+2020.03.25 at 16:31:52.428 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=52, authorityName='用户信息管理', authorityUrl='model/toShowUser', parent=5, flag='0'}
+2020.03.25 at 16:31:52.428 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=53, authorityName='添加用户', authorityUrl='model/toSaveUser', parent=5, flag='0'}
+2020.03.25 at 16:31:52.428 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:31:52.429 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：6
+2020.03.25 at 16:31:52.429 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：数据分析
+2020.03.25 at 16:31:52.429 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=61, authorityName='数据分析', authorityUrl='model/toShowdbi', parent=6, flag='0'}
+2020.03.25 at 16:31:52.429 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:31:52.562 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2020.03.25 at 16:31:52.817 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE status = '1' 
+2020.03.25 at 16:31:52.817 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 
+2020.03.25 at 16:31:52.818 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2020.03.25 at 16:31:52.819 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 16
+2020.03.25 at 16:31:52.820 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:31:52.821 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status from in_room_info WHERE status = '1' order by id desc limit ?,? 
+2020.03.25 at 16:31:52.823 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 0(Integer), 3(Integer)
+2020.03.25 at 16:31:52.825 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status
+2020.03.25 at 16:31:52.831 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 48, 小白, 1, 1, 420101015909090812, 13212324531, 200.00, 2020-03-26 16:06:02.0, 19, 1, 0
+2020.03.25 at 16:31:52.904 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 47, qqqq, 1, 0, 420101015909090811, 13212324532, 1111.00, 2020-03-18 13:00:49.0, 4, 1, 0
+2020.03.25 at 16:31:52.906 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 46, qqq, 1, 0, 420101015909090811, 13412321231, 1111.00, 2020-03-18 12:25:05.0, 16, 1, 0
+2020.03.25 at 16:31:52.907 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 16:31:52.909 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 46 test01 - --------------------------------------
+2020.03.25 at 16:31:52.909 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 47 test01 - 共有16条数据
+2020.03.25 at 16:31:52.909 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - 小白,13212324531
+2020.03.25 at 16:31:52.909 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 16:31:52.910 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 16:31:52.911 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 19(Integer)
+2020.03.25 at 16:31:52.912 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 16:31:52.913 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 19, http://q7dn1b5wf.bkt.clouddn.com/fm5.jpg, 8307, 1, 6, 1
+2020.03.25 at 16:31:52.917 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:31:52.918 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=19, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm5.jpg', roomNum='8307', roomStatus='1', roomTypeId=6, flag=1}
+2020.03.25 at 16:31:52.925 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 16:31:52.926 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@669513d8
+2020.03.25 at 16:31:52.927 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - qqqq,13212324532
+2020.03.25 at 16:31:52.927 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 16:31:52.928 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 16:31:52.929 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 4(Integer)
+2020.03.25 at 16:31:52.930 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 16:31:52.931 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg, 8204, 1, 2, 1
+2020.03.25 at 16:31:52.932 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:31:52.932 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=4, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg', roomNum='8204', roomStatus='1', roomTypeId=2, flag=1}
+2020.03.25 at 16:31:52.936 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 16:31:52.936 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@54361a9
+2020.03.25 at 16:31:52.936 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - qqq,13412321231
+2020.03.25 at 16:31:52.936 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 16:31:52.937 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 16:31:52.937 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 16(Integer)
+2020.03.25 at 16:31:52.938 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 16:31:52.939 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 16, http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg, 8304, 1, 3, 1
+2020.03.25 at 16:31:52.940 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:31:52.941 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=16, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg', roomNum='8304', roomStatus='1', roomTypeId=3, flag=1}
+2020.03.25 at 16:31:52.945 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 16:31:52.946 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@18e7143f
+2020.03.25 at 16:36:59.033 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2020.03.25 at 16:36:59.657 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:36:59.677 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 0(Integer)
+2020.03.25 at 16:36:59.689 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:36:59.690 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 1, 入住管理, #, 0, 0
+2020.03.25 at 16:36:59.692 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 2, 订单管理, #, 0, 0
+2020.03.25 at 16:36:59.692 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 3, 会员管理, #, 0, 0
+2020.03.25 at 16:36:59.693 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, 客房管理, #, 0, 0
+2020.03.25 at 16:36:59.694 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 5, 系统用户管理, #, 0, 0
+2020.03.25 at 16:36:59.695 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 6, 数据分析, #, 0, 0
+2020.03.25 at 16:36:59.696 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 6
+2020.03.25 at 16:36:59.701 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:36:59.702 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 1(Integer)
+2020.03.25 at 16:36:59.704 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:36:59.704 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 11, 入住信息管理, model/toShowInRoomInfo, 1, 0
+2020.03.25 at 16:36:59.705 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 12, 入住信息添加, model/toSaveInRoomInfo, 1, 0
+2020.03.25 at 16:36:59.706 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 13, 消费记录, model/toShowRoomSale, 1, 0
+2020.03.25 at 16:36:59.707 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 16:36:59.707 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:36:59.708 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 2(Integer)
+2020.03.25 at 16:36:59.709 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:36:59.709 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 21, 订单查询, model/toShowOrders, 2, 0
+2020.03.25 at 16:36:59.710 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:36:59.711 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:36:59.711 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 3(Integer)
+2020.03.25 at 16:36:59.712 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:36:59.713 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 31, 会员信息管理, model/toShowVip, 3, 0
+2020.03.25 at 16:36:59.713 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 32, 添加会员, model/toSaveVip, 3, 0
+2020.03.25 at 16:36:59.713 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2020.03.25 at 16:36:59.714 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:36:59.714 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 4(Integer)
+2020.03.25 at 16:36:59.715 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:36:59.716 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 41, 客房信息管理, model/toShowRooms, 4, 0
+2020.03.25 at 16:36:59.716 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 42, 房型信息管理, model/toShowRoomType, 4, 0
+2020.03.25 at 16:36:59.717 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 2
+2020.03.25 at 16:36:59.718 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:36:59.718 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 5(Integer)
+2020.03.25 at 16:36:59.719 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:36:59.720 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 51, 角色信息管理, model/toShowRole, 5, 0
+2020.03.25 at 16:36:59.720 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 52, 用户信息管理, model/toShowUser, 5, 0
+2020.03.25 at 16:36:59.722 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 53, 添加用户, model/toSaveUser, 5, 0
+2020.03.25 at 16:36:59.722 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 16:36:59.723 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT id, authority_name, authority_url, parent, flag FROM authority WHERE id IN(SELECT auth_id FROM role_auth WHERE role_id = ?) and parent=? 
+2020.03.25 at 16:36:59.724 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 1(Integer), 6(Integer)
+2020.03.25 at 16:36:59.725 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, authority_name, authority_url, parent, flag
+2020.03.25 at 16:36:59.726 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 61, 数据分析, model/toShowdbi, 6, 0
+2020.03.25 at 16:36:59.726 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:36:59.728 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：1
+2020.03.25 at 16:36:59.729 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：入住管理
+2020.03.25 at 16:36:59.729 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=11, authorityName='入住信息管理', authorityUrl='model/toShowInRoomInfo', parent=1, flag='0'}
+2020.03.25 at 16:36:59.729 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=12, authorityName='入住信息添加', authorityUrl='model/toSaveInRoomInfo', parent=1, flag='0'}
+2020.03.25 at 16:36:59.730 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=13, authorityName='消费记录', authorityUrl='model/toShowRoomSale', parent=1, flag='0'}
+2020.03.25 at 16:36:59.730 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:36:59.730 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：2
+2020.03.25 at 16:36:59.730 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：订单管理
+2020.03.25 at 16:36:59.730 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=21, authorityName='订单查询', authorityUrl='model/toShowOrders', parent=2, flag='0'}
+2020.03.25 at 16:36:59.730 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:36:59.731 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：3
+2020.03.25 at 16:36:59.731 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：会员管理
+2020.03.25 at 16:36:59.731 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=31, authorityName='会员信息管理', authorityUrl='model/toShowVip', parent=3, flag='0'}
+2020.03.25 at 16:36:59.731 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=32, authorityName='添加会员', authorityUrl='model/toSaveVip', parent=3, flag='0'}
+2020.03.25 at 16:36:59.731 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:36:59.732 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：4
+2020.03.25 at 16:36:59.732 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：客房管理
+2020.03.25 at 16:36:59.732 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=41, authorityName='客房信息管理', authorityUrl='model/toShowRooms', parent=4, flag='0'}
+2020.03.25 at 16:36:59.732 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=42, authorityName='房型信息管理', authorityUrl='model/toShowRoomType', parent=4, flag='0'}
+2020.03.25 at 16:36:59.732 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:36:59.733 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：5
+2020.03.25 at 16:36:59.733 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：系统用户管理
+2020.03.25 at 16:36:59.733 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=51, authorityName='角色信息管理', authorityUrl='model/toShowRole', parent=5, flag='0'}
+2020.03.25 at 16:36:59.733 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=52, authorityName='用户信息管理', authorityUrl='model/toShowUser', parent=5, flag='0'}
+2020.03.25 at 16:36:59.733 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=53, authorityName='添加用户', authorityUrl='model/toSaveUser', parent=5, flag='0'}
+2020.03.25 at 16:36:59.734 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:36:59.734 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 49 test01 - 一级权限id：6
+2020.03.25 at 16:36:59.734 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 50 test01 - 一级权限名称：数据分析
+2020.03.25 at 16:36:59.734 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 53 test01 - Authority{id=61, authorityName='数据分析', authorityUrl='model/toShowdbi', parent=6, flag='0'}
+2020.03.25 at 16:36:59.734 CST INFO  com.zcl.ssm.test.AuthorityServiceTest 55 test01 - ------------------------------------------
+2020.03.25 at 16:36:59.851 CST DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2020.03.25 at 16:37:00.055 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: SELECT count(0) FROM in_room_info WHERE status = '1' 
+2020.03.25 at 16:37:00.056 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 
+2020.03.25 at 16:37:00.057 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: count(0)
+2020.03.25 at 16:37:00.057 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 16
+2020.03.25 at 16:37:00.058 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:37:00.061 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status from in_room_info WHERE status = '1' order by id desc limit ?,? 
+2020.03.25 at 16:37:00.062 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 0(Integer), 3(Integer)
+2020.03.25 at 16:37:00.064 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, customer_name, gender, is_vip, idcard, phone, money, create_date, room_id, status, out_room_status
+2020.03.25 at 16:37:00.070 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 48, 小白, 1, 1, 420101015909090812, 13212324531, 200.00, 2020-03-26 16:06:02.0, 19, 1, 0
+2020.03.25 at 16:37:00.144 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 47, qqqq, 1, 0, 420101015909090811, 13212324532, 1111.00, 2020-03-18 13:00:49.0, 4, 1, 0
+2020.03.25 at 16:37:00.145 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 46, qqq, 1, 0, 420101015909090811, 13412321231, 1111.00, 2020-03-18 12:25:05.0, 16, 1, 0
+2020.03.25 at 16:37:00.146 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 3
+2020.03.25 at 16:37:00.147 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 46 test01 - --------------------------------------
+2020.03.25 at 16:37:00.147 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 47 test01 - 共有16条数据
+2020.03.25 at 16:37:00.147 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - 小白,13212324531
+2020.03.25 at 16:37:00.148 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 16:37:00.148 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 16:37:00.148 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 19(Integer)
+2020.03.25 at 16:37:00.149 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 16:37:00.150 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 19, http://q7dn1b5wf.bkt.clouddn.com/fm5.jpg, 8307, 1, 6, 1
+2020.03.25 at 16:37:00.153 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:37:00.154 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=19, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm5.jpg', roomNum='8307', roomStatus='1', roomTypeId=6, flag=1}
+2020.03.25 at 16:37:00.158 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 16:37:00.158 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@669513d8
+2020.03.25 at 16:37:00.159 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - qqqq,13212324532
+2020.03.25 at 16:37:00.159 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 16:37:00.159 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 16:37:00.160 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 4(Integer)
+2020.03.25 at 16:37:00.161 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 16:37:00.161 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 4, http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg, 8204, 1, 2, 1
+2020.03.25 at 16:37:00.162 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:37:00.162 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=4, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg', roomNum='8204', roomStatus='1', roomTypeId=2, flag=1}
+2020.03.25 at 16:37:00.165 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 16:37:00.165 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@54361a9
+2020.03.25 at 16:37:00.166 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 50 test01 - qqq,13412321231
+2020.03.25 at 16:37:00.166 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 51 test01 - -----------------------------
+2020.03.25 at 16:37:00.166 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==>  Preparing: select id, room_pic, room_num, room_status, room_type_id, flag from rooms where id = ? 
+2020.03.25 at 16:37:00.166 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - ==> Parameters: 16(Integer)
+2020.03.25 at 16:37:00.167 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==    Columns: id, room_pic, room_num, room_status, room_type_id, flag
+2020.03.25 at 16:37:00.168 CST TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger 151 trace - <==        Row: 16, http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg, 8304, 1, 3, 1
+2020.03.25 at 16:37:00.169 CST DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 145 debug - <==      Total: 1
+2020.03.25 at 16:37:00.170 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 52 test01 - Rooms{id=16, roomPic='http://q7dn1b5wf.bkt.clouddn.com/fm3.jpg', roomNum='8304', roomStatus='1', roomTypeId=3, flag=1}
+2020.03.25 at 16:37:00.173 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 53 test01 - ----------------------------------
+2020.03.25 at 16:37:00.173 CST INFO  com.zcl.ssm.test.InRoomInfoServiceTest 54 test01 - com.zcl.ssm.entity.RoomType@18e7143f
